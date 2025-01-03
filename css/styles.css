@@ -1,8 +1,25 @@
+/* styles reset */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
   background-color: white;
   letter-spacing: 2%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 h1,
@@ -22,6 +39,25 @@ a {
 ul,
 ol {
   list-style-type: none;
+  margin: o;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+/* container */
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -36,6 +72,10 @@ ol {
 
 .logo-studio {
   color: #2e2f42;
+}
+
+.menu-nav {
+  display: flex;
 }
 
 .menu-nav-link {
@@ -66,7 +106,8 @@ ol {
   color: #404bbf;
 }
 
-.contact-info {
+.contact-info ul {
+  display: flex;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
