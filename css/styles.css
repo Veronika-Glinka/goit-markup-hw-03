@@ -52,12 +52,23 @@ img {
 .container {
   max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 /* header */
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  height: 72px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -68,6 +79,7 @@ img {
   font-size: 18px;
   line-height: 1.17;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -76,6 +88,7 @@ img {
 
 .menu-nav {
   display: flex;
+  gap: 40px;
 }
 
 .menu-nav-link {
@@ -112,12 +125,14 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  gap: 40px;
 }
 
 /* title */
 
 .title {
   background-color: #2e2f42;
+  height: 600px;
 }
 
 .title-heading {
