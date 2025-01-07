@@ -91,6 +91,10 @@ img {
   gap: 40px;
 }
 
+.menu-nav li {
+  padding: 24px 0;
+}
+
 .menu-nav-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -132,7 +136,7 @@ img {
 
 .title {
   background-color: #2e2f42;
-  height: 600px;
+  padding: 188px 0;
 }
 
 .title-heading {
@@ -142,6 +146,7 @@ img {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
 }
 
 .title-button {
@@ -152,6 +157,9 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  max-width: 169px;
+  height: 56px;
+  border-radius: 4px;
 }
 
 .title-button:hover {
@@ -164,17 +172,32 @@ img {
 
 /* values */
 
+.values {
+  padding: 120px 0;
+}
+
 .values-heading {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .values-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.values-list {
+  display: flex;
+  gap: 24px;
+}
+
+.values-list-item {
+  width: calc((100%-72px) / 4);
+}
+
 /* team */
 
 .team {
