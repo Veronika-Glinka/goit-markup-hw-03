@@ -92,16 +92,14 @@ header .container {
 .menu-nav {
   display: flex;
   gap: 40px;
-}
-
-.menu-nav li {
-  padding: 24px 0;
+  align-items: center;
 }
 
 .menu-nav-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
+  padding: 24px 0;
 }
 
 .menu-nav-link:hover {
@@ -167,7 +165,7 @@ header .container {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  max-width: 169px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
 }
@@ -183,7 +181,16 @@ header .container {
 /* values */
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .values {
@@ -242,10 +249,11 @@ header .container {
   background-color: #ffffff;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+  width: calc((100%-72) / 4);
 }
 
 .card-content {
-  padding: 32px 16px;
+  padding: 32px;
   text-align: center;
 }
 
@@ -266,18 +274,18 @@ header .container {
 /* portfolio */
 
 .portfolio .container {
-  padding: 120px 0;
+  padding: 120px 0 120px 0;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-list-item {
-  border: 1px solid #e7e9fc;
-  border-top: none;
+  width: calc((100%-48px) / 3);
 }
 
 .portfolio-heading {
@@ -295,6 +303,7 @@ header .container {
   letter-spacing: 0.02em;
   line-height: 1.2;
   font-weight: 500;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -304,14 +313,16 @@ header .container {
 
 .portfolio-card-content {
   height: 120px;
-  padding: 32px 16px 0;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 /* footer */
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px;
+  padding: 100px 0;
 }
 
 .footer .container {
