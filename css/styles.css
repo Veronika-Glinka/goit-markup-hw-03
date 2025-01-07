@@ -284,8 +284,8 @@ header .container {
   row-gap: 48px;
 }
 
-.portfolio-list li {
-  width: calc((100%-48px) / 3);
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-heading {
