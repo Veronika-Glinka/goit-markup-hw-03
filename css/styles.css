@@ -221,7 +221,7 @@ header .container {
 
 /* team */
 
-.team .container {
+.team {
   padding: 120px 0;
 }
 
@@ -253,7 +253,7 @@ header .container {
 }
 
 .card-content {
-  padding: 32px;
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -273,7 +273,7 @@ header .container {
 
 /* portfolio */
 
-.portfolio .container {
+.portfolio {
   padding: 120px 0 120px 0;
 }
 
@@ -284,7 +284,7 @@ header .container {
   row-gap: 48px;
 }
 
-.portfolio-list-item {
+.portfolio-image {
   width: calc((100%-48px) / 3);
 }
 
